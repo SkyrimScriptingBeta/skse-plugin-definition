@@ -13,7 +13,7 @@ target_include_directories(${PROJECT_NAME} INTERFACE
 )
 
 if(NOT EXTERNAL_COMMONLIBSSE)
-  find_package(CommonLibSSE REQUIRED)
+  find_package(CommonLibSSE CONFIG REQUIRED)
   target_link_libraries(${PROJECT_NAME} INTERFACE CommonLibSSE::CommonLibSSE)
 endif()
 
